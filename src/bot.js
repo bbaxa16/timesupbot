@@ -5,7 +5,7 @@ const bot = new Twit(config);
 
 bot.post('statuses/update', {
   status:
-  'test'
+  '@RebLebsock RESIGN'
 }, (err, data, response) => {
   if (err) {
     console.log(err);
