@@ -9,7 +9,7 @@ let m = d.getMinutes();
 
 function resign() {
   bot.post('statuses/update', {
-  status: 'It is ' + n + ':' + m + '. Time for @RepLebsock to resign #timesup'
+  status: 'It is ' + n + ':' + m + '. Time for @RepLebsock to resign #timesup #coleg #copolitics'
 }, (err, data, response) => {
   if (err) {
     console.log(err)
