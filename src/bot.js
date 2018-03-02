@@ -3,11 +3,12 @@ const config = require('./config');
 
 const bot = new Twit(config);
 
-let d = new Date();
-let n = d.getHours();
-let m = d.getMinutes();
+
 
 function resign() {
+  let d = new Date();
+  let n = d.getHours();
+  let m = d.getMinutes();
   bot.post('statuses/update', {
   status: 'It is ' + n + ':' + m + '. Time for @RepLebsock to resign #timesup #coleg #copolitics'
 }, (err, data, response) => {
@@ -18,5 +19,5 @@ function resign() {
   }
 })
 }
-resign();
-setInterval(resign, 1000*60*60)
+
+setInterval(resign, 1000*60*45)
