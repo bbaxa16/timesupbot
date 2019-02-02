@@ -10,7 +10,7 @@ function resign() {
   let n = d.getHours();
   let m = d.getMinutes();
   bot.post('statuses/update', {
-  status: 'It is ' + n + ':' + m + '. Time for @RepLebsock to resign #timesup #coleg #copolitics'
+  status: 'It is ' + n + ':' + m + '.'
 }, (err, data, response) => {
   if (err) {
     console.log(err)
@@ -19,5 +19,5 @@ function resign() {
   }
 })
 }
-
-setInterval(resign, 1000*60*45)
+resign()
+setInterval(resign, 1000*60*60)
